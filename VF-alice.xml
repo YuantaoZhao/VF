@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><VirtualFile>
+    <ID>3859c25a-82c6-4c63-9099-e23229411980</ID>
+    <Name>Salmon</Name>
+    <CreationDate>2018-11-06T00:00:00+09:00</CreationDate>  <!-- ISO 8601 -->
+    <ExpirationDate>2019-11-06T00:00:00+09:00</ExpirationDate>
+    <VFOwner>
+        <ID>ad28dd69fae00d791a040e0487a6a6058c63b48ebd941d6121e925460b785c7e</ID>  <!-- VF owner's public-key fingerprint -->
+        <Name>Alice</Name>
+    </VFOwner>
+    <Files>
+        <File num="1">
+            <ID>7d995d1d-02ad-4cdc-b421-77d4d469ff8a</ID>  <!-- ファイルがまだ存在しない場合，必須 -->
+            <Digest>
+                <Algorithm>SHA-256</Algorithm>
+                <Value>aec070645fe53ee3b3763059376134f058cc337247c978add178b6ccdfb0019f</Value>
+            </Digest>
+            <OwnerID>ad28dd69fae00d791a040e0487a6a6058c63b48ebd941d6121e925460b785c7e</OwnerID>  <!-- 自分がオーナなら書く．他人のファイルなら不要（オプション？） -->
+            <!--<URLs>
+                <URL num="1">vf://alice.com/foo.txt</URL>
+            </URLs>-->
+            <FileName>foo.txt</FileName><!--(Arthur)URLがない代わりにわかりやすいため名前をつける>-->
+        </File>
+        <File num="2">
+            <ID>b8aa46e6-d133-46ad-b499-51213f59ab0f</ID>
+            <Digest>
+                <Algorithm>SHA-256</Algorithm>
+                <Value>b04df375c27e49550dec2ec33b9cf1b0c30c5649efc6d2d02ccc2de05a8e59db</Value>
+            </Digest>
+            <OwnerID>ad28dd69fae00d791a040e0487a6a6058c63b48ebd941d6121e925460b785c7e</OwnerID>
+            <!--<URLs>
+                <URL num="2">vf://alice.com/bar.csv</URL>
+            </URLs>-->
+            <FileName>bar.csv</FileName>
+        </File>
+    </Files>
+    <Metadata>
+        <Master>
+            <ID>552ae1d9-2def-452f-bcd1-3cdde64c60e1</ID>
+            <URLs>
+                <URL num="1">vf://alice.com/3859c25a-82c6-4c63-9099-e23229411980_meta.xml</URL>
+            </URLs>
+        </Master>
+        <Tmp>
+            <ID>30918147-2224-4733-a1f9-a01236d3b6b2</ID>
+            <MaxAge>2018-12-06T00:00:00+09:00</MaxAge>  <!-- 有効期限とインターバル（頻度），どちらの指定が良いか？ -->
+            <Data>Write metadata here.</Data>
+        </Tmp>
+    </Metadata>
+    <!--<Provenance>
+        <Environment>
+            <OS>Ubuntu-18.10</OS>
+        </Environment>
+        <DependentVFs>
+            <VF num="1">
+                <ID>06f8a7f4-3d6e-4ff0-Ad9e-b5da33c5e46c</ID>
+            </VF>
+            <VF num="2">
+                <ID>a189a241-1a58-4d6e-b683-199549d0632b</ID>
+            </VF>
+        </DependentVFs>
+        <ExecutionCommand>vf ./1 2</ExecutionCommand>
+    </Provenance>-->
+    <Authentication>
+        <Required>true</Required>
+        <Protocol>VirtualFile</Protocol>
+        <Data>
+            <Encrypted>false</Encrypted>
+            <PermittedAuthenticationServers>
+                <Server num="1">
+                    <Hostname>vf-authentication.foo.jp</Hostname>
+                    <Certificate>-----BEGIN CERTIFICATE-----
+MIIFXTCCA0WgAwIBAgIJANojK/yN8rXtMA0GCSqGSIb3DQEBCwUAMEUxCzAJBgNV
+BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBX
+aWRnaXRzIFB0eSBMdGQwHhcNMTgxMTA1MDIzMjQ4WhcNMTkxMTA1MDIzMjQ4WjBF
+MQswCQYDVQQGEwJBVTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50
+ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIIC
+CgKCAgEAxeds2XEgUmbT/oxBXPzMpOqJC9TZNJ2wbTqRWXUt8O/J95JxoOslyi0z
+EE8eNw5ULhbpstoaJ1DZpo9doTC2AdSOAYTnku5uFrc6k0Q9OJ6Cry6p7RcSw8M2
+/hkJay3kaxaAfGFwZCD2SGEqqC6W+RETox0Ut7Sm2JUI+7swW0q7B6o6Q2wrWInl
+cyF3+U9ybjnNj2Olt/XMP6VTwSFhD0pbrXrp+T71EOfAK8zyD6yhPTjgScd//cnW
+OfZIn6Q10urvv35Cr/uWI5M/O7+jDVkJC040KQ6No1sN1kL4kjvohpA1WrGGkq8B
+gjGOtB0Et9DkIKVZ093J11HEFMGuQ8OJjKVKiB8MjVw6mZ0nf1LX2jIS4BXfNnX9
+My8Z0DAMKtArKXTxWp/HkjIUVzU/iOJkK8LOSXEBwhnX+tnxVqftpveb8AUF04ki
+BNAuRsz/sqWoZ0py8c3sBq6VfQmRkUFWjk4ii15ldirKpt2+eC4L3mqLjP5JC+kM
+JJXSg6YrU0a1OgEQ3J3LWS248J8ENUHSnbD0iKbYUZ9p3N0g6KKNC+aTDNCsSjAK
+yCm4NEwWDJWY8vPp/KG96WwiZ54GrScDD5U8bz0Y2xa9homNkc73R8UTxoKwGMJ1
+T0i5Mx8AJTROrk+xv0giNMqeSHabf0sfIghkEwz/QMn1VTtO0JMCAwEAAaNQME4w
+HQYDVR0OBBYEFB0oKgK7tAx00TWmA6UJ/bOM931HMB8GA1UdIwQYMBaAFB0oKgK7
+tAx00TWmA6UJ/bOM931HMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIB
+AIEsBDfCJ48upmZGhQuuPc1afzVX0AeddVTxLZlYHibREdBUdA7OMeOKIsbnQR8O
+frKEXfUtiROkzR5fXtIqRlUBY9szIPHWh9vhQ7QgEsHHHw6KQ15kJ6vd+6gWpeNV
+Y/m5LbIYgz6ONfSb/L49kkImcQ9UxZYEy7YdKgRSJb+/hwnWlI4MBYphlKKtWAls
+N8Nih8R3NMvXVjL1js5M/n80tA7zbX8DDmkKXb5/GlS/u5ziocHXWlHDv+WHTg2J
+aGoodpcwmqkROK6dQNuWEBf23FgSsw70nQu/gqsh0t7RTXXwjT1Vz6kJaMjFPn8U
+1q+E7zHjEeHo7M+G6gn59qUa6dtg8EOdw3l0PYqLGFb+Fl/f6V8kwm5OccbkVXHl
+V3hl6WVjlKyvUs1CxVfj0LvHHqwjZhCK1Qz2sWiTbJG8ZmHnqBQI/X1WxwaKzVI9
+pV+hou+0KRB1SaLewlynmxEYlXm3f5ntknb+DiuiIJxljV9GfyUI/uVOEZij4CiG
+zG3A80Ebs1Ljva0zw4kD1P5LdSrO2s4oPNphY5hVLbnsLqZSyNFfs+SbKv2IkJUi
+OMGJzhAISg9gmKLLbyqxgeo9TXaPV4D29oX571zc8r77oiEDYCaGFovdzZuyZQdI
+3Zplpbi7LRJ04l8YSsqzp97uo5UDRvxLcQHzS9Bjv597
+-----END CERTIFICATE-----
+</Certificate>
+                </Server>
+                <Server num="2">
+                    <Hostname>vf-authentication.bar.jp</Hostname>
+                    <Certificate>-----BEGIN CERTIFICATE-----
+MIIFXTCCA0WgAwIBAgIJAOXGdpJp2CilMA0GCSqGSIb3DQEBCwUAMEUxCzAJBgNV
+BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBX
+aWRnaXRzIFB0eSBMdGQwHhcNMTgxMTA1MDIzMzI5WhcNMTkxMTA1MDIzMzI5WjBF
+MQswCQYDVQQGEwJBVTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50
+ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIIC
+CgKCAgEAwOm+WIwQAmKfWv7l25FzarsHIdjQJmDV432NZdklNa8ky6q0dyQvQGAQ
+FqjWEWMl2RbvYGvoM4b2BxrIo9YxAZHNqhll9/RHd6Yhai9VUm74jx5BmXuLjJTq
+Y2q367OXEkVHmTmvtBF3OPRRO4IFKmzF0VUtGG6H92CbbJI/Gti20N+G9xfUgwsx
+kUOn7UXWX2ACQkzze/zYS6z3Nnck1qlDqICsNTSDqr4BsKYPyk+4WdxcKpYVjAr6
+FiFEg9nB3CjvR5r4r6sSbzIZ/edJcnc2t+d1GXJascsGAxjJfKpSEeSzI0ey1m8A
+bBlitVR87Hglm6fce6NErjM9vw29e3z9UdiU+geIBGXnPcbXyOn94DfOaEZRRAWh
+RydLhfRNPOpwkKBXqJgqzlyReYfe1hfA457stiNcrcup18BA7phHSP9vxkcP73FZ
+pvQH1tlcl55408UtSfcmE7GOziiS+jgY90tLyLDVoZ/905d6OgXiyK4mt6Y9TlEC
+q3Xm8lJK8wSCMUcNF0hflKv3bbKZTgwof97AmmPUvVynWhu5UKvfRTrwMOGWbXij
+3r/nb6W0dHvJXdKLFpt+bGABpJtmzfErjRLKMCI97MAghsVTVcO0kx2KH2J1BIJx
+Wmjn6tYvObjILJPfFKERyKuaLvPBQnPckJFLKP8a4jpqgVDeeUECAwEAAaNQME4w
+HQYDVR0OBBYEFFOSIM6YTQzzQKY2N0lc37SPZqkUMB8GA1UdIwQYMBaAFFOSIM6Y
+TQzzQKY2N0lc37SPZqkUMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIB
+ABMduhqkCSfvH0I4E+kajfKpajC8l7AXdsczcQz6iHzxK2dWhvcHeLJxCM9NrkMZ
+gsNOJ0WmRfR1qH8wZtAWE+k7k+/5h4hXRYIVUXZFTcFIpN3x40Gyov7zrVu9dZzJ
+wgZZwjDj8oYjr+mC6C4EPO5y5iiRJCq3a7/3gnpYW76+/64UG3cAV4HlIPjxFiYY
+V8OUE2o6W7SMgFZ/nXQXoln1VrUdKHctm/1BEtdQ9g8WbdgnaSxLRUv6MdfDMzG+
+HRMNWTrQbxJBbbt44n2q+nmBQ0fAJYyyFY6257nbZD0XmQ1lXEgk2+qc41SWRbjB
+uxuusMpxh8jscd9kmdnGrSb+do0/s5/0MqN1S94ezDQxH3U8ndfdxSTRNcLQmBVy
+oAzDczWguKD56wguP17NTRMPM33mcQw0Mo6Vk6l0iL/5oYujAyeGk6GoHRCSgNKQ
+0vX6cP1KJWZBw7pgYdLPXja1HE8rEXoBUQLPPvdAf8v52t2PFrdRy0TyIoKJfq9m
+p5swhvon0LJDi+E8DPGrTaidmNiLPreRp+TNnr+U7CHZ6II5C4vh/hTz4eum1SCA
+uDOPrN1WwQXou8ytV/QjIg2C01/d3Lgy81QXDt/L7cnpTUtExHqnQfZxJEoI3z5E
+KmjekWZoxldLTTTo2EoGXR6ElXCADu01PJTnKo5hUPqO
+-----END CERTIFICATE-----
+</Certificate>
+                </Server>
+            </PermittedAuthenticationServers>
+        </Data>
+    </Authentication>
+    <Authorization>
+        <Required>true</Required>
+        <Protocol>VirtualFile</Protocol>
+        <Data>
+            <Encrypted>false</Encrypted>
+            <ACL>
+                <Master>
+                    <ID>52c2885e-284f-44dc-9f20-b729886bf307</ID>
+                    <URLs>
+                        <URL num="1">vf://alice.com/3859c25a-82c6-4c63-9099-e23229411980_alc.xml</URL>
+                    </URLs>
+                </Master>
+                <Tmp>
+                    <ID>1d7407d6-79ee-4cc2-9441-fd2726552449</ID>
+                    <ExpirationDate>2019-06-01T00:00:00+09:00</ExpirationDate>
+                    <Data>subject,operation,dependent_vfs,processing_computers,command
+q871dd69fae00d791a040e0487a6a6058c63b48ebd941d6121e925460b785c7e,read,,,
+</Data>
+                </Tmp>
+            </ACL>
+            <PermittedAuthorizationServers>
+                <Server num="1">
+                    <Hostname>vf-authorization-alice.foo.jp</Hostname>
+                    <Certificate>-----BEGIN CERTIFICATE-----
+MIIFXTCCA0WgAwIBAgIJANojK/yN8rXtMA0GCSqGSIb3DQEBCwUAMEUxCzAJBgNV
+BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBX
+aWRnaXRzIFB0eSBMdGQwHhcNMTgxMTA1MDIzMjQ4WhcNMTkxMTA1MDIzMjQ4WjBF
+MQswCQYDVQQGEwJBVTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50
+ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIIC
+CgKCAgEAxeds2XEgUmbT/oxBXPzMpOqJC9TZNJ2wbTqRWXUt8O/J95JxoOslyi0z
+EE8eNw5ULhbpstoaJ1DZpo9doTC2AdSOAYTnku5uFrc6k0Q9OJ6Cry6p7RcSw8M2
+/hkJay3kaxaAfGFwZCD2SGEqqC6W+RETox0Ut7Sm2JUI+7swW0q7B6o6Q2wrWInl
+cyF3+U9ybjnNj2Olt/XMP6VTwSFhD0pbrXrp+T71EOfAK8zyD6yhPTjgScd//cnW
+OfZIn6Q10urvv35Cr/uWI5M/O7+jDVkJC040KQ6No1sN1kL4kjvohpA1WrGGkq8B
+gjGOtB0Et9DkIKVZ093J11HEFMGuQ8OJjKVKiB8MjVw6mZ0nf1LX2jIS4BXfNnX9
+My8Z0DAMKtArKXTxWp/HkjIUVzU/iOJkK8LOSXEBwhnX+tnxVqftpveb8AUF04ki
+BNAuRsz/sqWoZ0py8c3sBq6VfQmRkUFWjk4ii15ldirKpt2+eC4L3mqLjP5JC+kM
+JJXSg6YrU0a1OgEQ3J3LWS248J8ENUHSnbD0iKbYUZ9p3N0g6KKNC+aTDNCsSjAK
+yCm4NEwWDJWY8vPp/KG96WwiZ54GrScDD5U8bz0Y2xa9homNkc73R8UTxoKwGMJ1
+T0i5Mx8AJTROrk+xv0giNMqeSHabf0sfIghkEwz/QMn1VTtO0JMCAwEAAaNQME4w
+HQYDVR0OBBYEFB0oKgK7tAx00TWmA6UJ/bOM931HMB8GA1UdIwQYMBaAFB0oKgK7
+tAx00TWmA6UJ/bOM931HMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIB
+AIEsBDfCJ48upmZGhQuuPc1afzVX0AeddVTxLZlYHibREdBUdA7OMeOKIsbnQR8O
+frKEXfUtiROkzR5fXtIqRlUBY9szIPHWh9vhQ7QgEsHHHw6KQ15kJ6vd+6gWpeNV
+Y/m5LbIYgz6ONfSb/L49kkImcQ9UxZYEy7YdKgRSJb+/hwnWlI4MBYphlKKtWAls
+N8Nih8R3NMvXVjL1js5M/n80tA7zbX8DDmkKXb5/GlS/u5ziocHXWlHDv+WHTg2J
+aGoodpcwmqkROK6dQNuWEBf23FgSsw70nQu/gqsh0t7RTXXwjT1Vz6kJaMjFPn8U
+1q+E7zHjEeHo7M+G6gn59qUa6dtg8EOdw3l0PYqLGFb+Fl/f6V8kwm5OccbkVXHl
+V3hl6WVjlKyvUs1CxVfj0LvHHqwjZhCK1Qz2sWiTbJG8ZmHnqBQI/X1WxwaKzVI9
+pV+hou+0KRB1SaLewlynmxEYlXm3f5ntknb+DiuiIJxljV9GfyUI/uVOEZij4CiG
+zG3A80Ebs1Ljva0zw4kD1P5LdSrO2s4oPNphY5hVLbnsLqZSyNFfs+SbKv2IkJUi
+OMGJzhAISg9gmKLLbyqxgeo9TXaPV4D29oX571zc8r77oiEDYCaGFovdzZuyZQdI
+3Zplpbi7LRJ04l8YSsqzp97uo5UDRvxLcQHzS9Bjv597
+-----END CERTIFICATE-----
+</Certificate>
+                </Server>
+            </PermittedAuthorizationServers>
+        </Data>
+    </Authorization>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>dSMwAhToyUQ806wWRhtI45A+c6bhWt8TjL7kMOFmoTk=</DigestValue></Reference></SignedInfo><SignatureValue>TV+DVUB+Il4xf3wXDlSkMWb2ov0cZTGPQ3GtclVTHAJq5CMLpqgNS7K67tlJwTiKUrFrohDyEM4G&#13;
+PHco1l4mQ6zhyK8JDJ+qVHw4AZ2szdQXaYjp0cnTsHsR6TvTKdTePsZ2VjOvy6RfquGtw3im88lH&#13;
+5GhdAPiqJ8OtR/M/LHC/nZx+5S8GbrQZ34ZyXwnu2CTf/k2sJxyXA6V9W1SUPk2ZG3hy2xQZDCBg&#13;
+T0GTQLsGxzWLb1q2xXZoahBXNAH5aijoWwSiynfcvIzDb55xFbcIceKDMePpMDvq8uokHgKNS4et&#13;
+NjIRHodlIZPe1J+LInUygSpG/ZB3LQSomYGdJvE7cSpRWrDsn1PWlEjJKDZUQv1+3fcEUuv5CT95&#13;
+gXQg5N/htJo9Fht+B7PyorJYr2p5xmLhfoJF7ybSK8tEQPFWoGlZuQWFXkL5z8CxKqE4mMnm+GiN&#13;
+ZERwo7OB99YNyzRNhX5QKDSpqBW8q9dWXCOssv82xq5bzBRP8o4JrMZlbETbUFimoac7KtCvr3Qm&#13;
+V+JPrNHF5Tuc5yiP6Pixo2bKQxMmMWSpuealOwnkBxroAz3KpoSxMH18687OGLTIcB65wU+WgQ8q&#13;
+F061tZtiwu9cMOlj8vdr2xiisvmtRYfUyj8tJHzqSd43dmPFAv5ysCb3ds8Tyf8UwNupsQo/k+k=</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIFXTCCA0WgAwIBAgIJALQOGQc0dXzWMA0GCSqGSIb3DQEBCwUAMEUxCzAJBgNVBAYTAkFVMRMw&#13;
+EQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwHhcN&#13;
+MTgxMDI5MTQ0MzA4WhcNMTkxMDI5MTQ0MzA4WjBFMQswCQYDVQQGEwJBVTETMBEGA1UECAwKU29t&#13;
+ZS1TdGF0ZTEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMIICIjANBgkqhkiG9w0B&#13;
+AQEFAAOCAg8AMIICCgKCAgEA1feZ6i9REQ6m+F4wOwmib6P48dCyAQI+A/rA719CR2cOTnxUvo/V&#13;
+pU2uZlJflLQyHjjEf29OE83YT/hnUsPiIToV5aqTinFaK8WpV0pRgmYJ0yRUzkygSEbKHiyvUA40&#13;
+lVsIvW0bWxMUHL0rsSc3OlXfVRkeDf4ZEc/wNOnqON3tx7km/GMEhfPSGvyPG5GlJw2YDIfe32eD&#13;
+3/nVNb0O/d3c8mcZfOQmrJD8rwxW90zesISIt2giC7PQ5J11qfPX8f+8fEL2r/6Nw+Jt8eLbSIp+&#13;
+cUl+HUMmd2HXlrUaH5iUeX+VXHMrO3yT7V5Jv2s/8B/v2zYwD8lFjnEJz1VPk7WqLOWEckS4oEFj&#13;
+jzql1t9x+LUQps4P0csrKZdAz2wtt0BBXzUZo2XzeF5exRjqkFw/pD7XMMBdLhTJ2OOH5S3xXDYF&#13;
+dTfJCLEcS1vGY4234FyzQESxU3+CvBeVheg30vXZkun8h7+tNp0YaviPC1xil+Picq/+G/+a2i2c&#13;
+bb0Sl/OYR+QDDFaAjM7EXCDifUwvsJvq4An0mvNSO0KpoXDP6IpkyLLKIQaQVJN6AATYzqWm/8Ru&#13;
+VHrJIeN0YGR29Rs81mSr9RrGChZRYrRTeFX/bScjhdCxKLjxQNc1oOXNWO29QMJAFObZ5mTv5fjp&#13;
+0AZummBp3gGsWDFcFxukpCMCAwEAAaNQME4wHQYDVR0OBBYEFBkWfXmyP/CPXnzol/8H7SDFhbkd&#13;
+MB8GA1UdIwQYMBaAFBkWfXmyP/CPXnzol/8H7SDFhbkdMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcN&#13;
+AQELBQADggIBAF3W8iAOeY5krEyrETOoEVtc/YPCXftmQuogeemJ5P7hvi2EsjQ5OxjkQK93fW3U&#13;
+D2JlKeb3XKRQlKnBjEZDezIEoSsuu5cpM/bLuWaiRGOxk3oRB3gvtRupC94Dhx3SG4dcpdv2BKGJ&#13;
+p4+YKThTCmrNAF4PpUDwfZZgpqw+ZSvYa64OMFRTomu7t8n4hGy/sPPp8mU/FcOHhQx03Umc5MT0&#13;
+UwPjn7mc38a2qnFfNHS3fcE3g029RVN2lo4CGT0ZU9/FICa2GhNxkyuJCgQeVYjgtebEXPS3tV3Q&#13;
+xu7yJ4KbXca301HBe7KPaJdmM7grVdILSUACZSmNDNJLVS/p/FNV3/49W1avN8oLfkaalKqvPUfL&#13;
+KvoNgJn3kYYUdAZRk3ioKpYG0DDmVpa/H8WLPr3a32/cIcdjHWCJWdxfjv394x+aX4aLZkBYVSmd&#13;
+9o3e6X1hMjnMYwpBIsfvssp6vIHJEc1Pur44V78Si1i2kh42uh2Zf1zFW6X2LC4K4/97lTN9r0II&#13;
+nQ5VcsEj4T/Qckjn71B7ddEis8RBBQq9gfq7XT2EBuChMzpJyYi43jX8i1PRfbpJdu1FAooxVeuK&#13;
+oN4dzmgBz2Bt/mGvvWnHdrgS63iHgKibaadG7mW/Mpm9UCkHzOtu/mbPQ2kYOFYjjrv9Xb5ZvpXk&#13;
+/PzJbotugjWV</X509Certificate></X509Data></KeyInfo></Signature></VirtualFile>
