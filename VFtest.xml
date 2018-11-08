@@ -3,32 +3,36 @@
     <Name>Salmon</Name>
     <CreationDate>2018-11-06T00:00:00+09:00</CreationDate>  <!-- ISO 8601 -->
     <ExpirationDate>2019-11-06T00:00:00+09:00</ExpirationDate>
-    <Owner>
+    <VFOwner>
         <ID>ad28dd69fae00d791a040e0487a6a6058c63b48ebd941d6121e925460b785c7e</ID>  <!-- VF owner's public-key fingerprint -->
         <Name>Alice</Name>
-    </Owner>
+    </VFOwner>
     <Files>
         <File num="1">
             <ID>7d995d1d-02ad-4cdc-b421-77d4d469ff8a</ID>  <!-- ファイルがまだ存在しない場合，必須 -->
-            <Digest>  <!-- ファイルが既に存在する場合，必須 -->
+            <!--<Digest>
                 <Algorithm>SHA-256</Algorithm>
                 <Value>aec070645fe53ee3b3763059376134f058cc337247c978add178b6ccdfb0019f</Value>
-            </Digest>
+            </Digest> -->
             <OwnerID>ad28dd69fae00d791a040e0487a6a6058c63b48ebd941d6121e925460b785c7e</OwnerID>  <!-- 自分がオーナなら書く．他人のファイルなら不要（オプション？） -->
-            <URLs>  <!-- Option -->
+            <!--<URLs>
                 <URL num="1">vf://alice.com/foo.txt</URL>
-            </URLs>
+            </URLs>-->
+            <FileName>foo.txt</FileName><!--(Arthur)URLがない代わりにわかりやすいため名前をつける>-->
+            <FileHash>c9d789a6b78f0e74135e8a8d20d8c3a6dceac03ab27be6c42bf4b0597c2a74d2</FileHash> <!--(Arthur)ファイルチェックのためのFileHashをつけます-->
         </File>
         <File num="2">
             <ID>b8aa46e6-d133-46ad-b499-51213f59ab0f</ID>
-            <Digest>
+            <!--<Digest>
                 <Algorithm>SHA-256</Algorithm>
                 <Value>b04df375c27e49550dec2ec33b9cf1b0c30c5649efc6d2d02ccc2de05a8e59db</Value>
-            </Digest>
+            </Digest>-->
             <OwnerID>ad28dd69fae00d791a040e0487a6a6058c63b48ebd941d6121e925460b785c7e</OwnerID>
-            <URLs>
+            <!--<URLs>
                 <URL num="2">vf://alice.com/bar.csv</URL>
-            </URLs>
+            </URLs>-->
+            <FileName>bar.csv</FileName>
+            <FileHash>c31e3b2fd5b3d408e932a37e71603fb6fca3a299f742cac6332c16c2f8b05c16</FileHash>
         </File>
     </Files>
     <Metadata>
@@ -44,7 +48,7 @@
             <Data>Write metadata here.</Data>
         </Tmp>
     </Metadata>
-    <Provenance>
+    <!--<Provenance>
         <Environment>
             <OS>Ubuntu-18.10</OS>
         </Environment>
@@ -57,7 +61,7 @@
             </VF>
         </DependentVFs>
         <ExecutionCommand>vf ./1 2</ExecutionCommand>
-    </Provenance>
+    </Provenance>-->
     <Authentication>
         <Required>true</Required>
         <Protocol>VirtualFile</Protocol>
@@ -159,7 +163,7 @@ q871dd69fae00d791a040e0487a6a6058c63b48ebd941d6121e925460b785c7e,read,,,
             </ACL>
             <PermittedAuthorizationServers>
                 <Server num="1">
-                    <Hostname>vf-authorization.foo.jp</Hostname>
+                    <Hostname>vf-authorization-alice.foo.jp</Hostname>
                     <Certificate>-----BEGIN CERTIFICATE-----
 MIIFXTCCA0WgAwIBAgIJANojK/yN8rXtMA0GCSqGSIb3DQEBCwUAMEUxCzAJBgNV
 BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBX
